@@ -178,7 +178,7 @@ final class swoole_server {
      * 
      * handler/on/set 方法只能在public start前调用
      * 
-     * 另名：bool swoole_server_handler(swoole_server $serv, string $event_name, mixed $event_callback_function);
+     * 别名：bool swoole_server_handler(swoole_server $serv, string $event_name, mixed $event_callback_function);
      *      第一个参数是swoole的资源对象
      * 
      * @param string $event_name
