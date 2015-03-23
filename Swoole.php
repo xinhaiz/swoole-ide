@@ -488,7 +488,7 @@ final class Process {
      * @param boolean $create_pipe 是否创建管道，启用$redirect_stdin_stdout后，
      *                  此选项将忽略用户参数，强制为true 如果子进程内没有进程间通信，可以设置为false
      */
-    public function construct(mixed $function, $redirect_stdin_stdout = false, $create_pipe = true){}
+    public function __construct(mixed $function, $redirect_stdin_stdout = false, $create_pipe = true){}
     
     /**
      * 执行fork系统调用
