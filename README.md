@@ -1,2 +1,2 @@
 # swoole-ide
-runngin time
+running time
