@@ -106,17 +106,12 @@ final class swoole_server {
      * 创建一个swoole server资源对象。
      * 别名： swoole_server_create
      * 
-     * $host 参数用来指定监听的ip地址，如127.0.0.1，或者外网地址，或者0.0.0.0监听全部地址
-     * IPv4 使用 127.0.0.1表示监听本机，0.0.0.0表示监听所有地址
-     * IPv6 使用::1表示监听本机，:: (0:0:0:0:0:0:0:0) 表示监听所有地址
-     * $port 监听的端口，如9501，监听小于1024端口需要root权限，如果此端口被占用server->start时会失败
-     * $mode 运行的模式，swoole提供了3种运行模式，默认为多进程模式
-     * $sock_type 指定socket的类型，支持TCP/UDP、TCP6/UDP6、UnixSock Stream/Dgram 6种
-     * 
-     * @param string $host
-     * @param int $port
-     * @param int $mode
-     * @param int $sock_type
+     * @param string $host 参数用来指定监听的ip地址，如127.0.0.1，或者外网地址，或者0.0.0.0监听全部地址
+     *                     127.0.0.1表示监听本机，0.0.0.0表示监听所有地址
+     *                     使用::1表示监听本机，:: (0:0:0:0:0:0:0:0) 表示监听所有地址
+     * @param int $port 监听的端口，如9501，监听小于1024端口需要root权限，如果此端口被占用server->start时会失败
+     * @param int $mode 运行的模式，swoole提供了3种运行模式，默认为多进程模式
+     * @param int $sock_type 指定socket的类型，支持TCP/UDP、TCP6/UDP6、UnixSock Stream/Dgram 6种
      */
     public function __construct(string $host, int $port, int $mode = SWOOLE_PROCESS, int $sock_type = SWOOLE_SOCK_TCP){}
     
