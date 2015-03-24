@@ -1192,3 +1192,30 @@ final class swoole_http_response {
     public function end(string $html){}
     
 }
+
+final class swoole_websocket_server {
+    
+    public function __construct() {}
+    
+    /**
+     * onHandShake onOpen onMessage
+     * 
+     * @param string $event
+     * @param callenable $callback
+     */
+    public function on(string $event, callenable $callback){}
+    
+    /**
+     * 向websocket客户端连接推送数据，长度最大不得超过2M。
+     * function swoole_websocket_server->push(int $fd, string $data, bool $binary = false);
+     * $fd 客户端连接的ID，如果指定的$fd对应的TCP连接并非websocket客户端，将会发送失败
+     * $data 要发送的数据内容
+     * $binary，指定发送数据内容的格式，默认为文本。如果设置为true表示发送二进制数据
+     * 发送成功返回true，发送失败返回false
+     * 
+     * @param int $fd
+     * @param string $data
+     * @param bool $binary
+     */
+    public function push(int $fd, string $data, bool $binary = false){}
+}
