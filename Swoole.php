@@ -67,7 +67,7 @@ define('SWOOLE_RWLOCK', SWOOLE_RWLOCK);
 /**
  * 创建自旋锁
  */
-define('SWOOLE_RWLOCK', SWOOLE_SPINLOCK);
+define('SWOOLE_SPINLOCK', SWOOLE_SPINLOCK);
 
 /**
  * 创建信号量
