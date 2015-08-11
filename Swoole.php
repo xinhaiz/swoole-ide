@@ -62,7 +62,7 @@ define('SWOOLE_MUTEX', SWOOLE_MUTEX);
 /**
  * 创建读写锁
  */
-define('SWOOLE_MUTEX', SWOOLE_MUTEX);
+define('SWOOLE_RWLOCK', SWOOLE_RWLOCK);
 
 /**
  * 创建自旋锁
